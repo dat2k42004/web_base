@@ -1,0 +1,35 @@
+// text basic //
+
+h1 head one : create title for web page, main content
+h2 head two : create support title for web page, devide main content to main idea
+h3 head 3 : devide content of ideas in h2
+h4 head 4 : devide content of ideas in h3
+h5 head 5 : devide content of ideas in h4
+h6 head 6 : devide content of ideas in h5
+p : format content of web page, line in one of p tags
+em : in nghieng
+strong : bold
+&nbsp; : space
+&lt; : 
+&gt; : 
+abbr : define an abbreviation or acronym(viet tat) as explain 
+address : provide contact info of author
+a href="url"link text/a : create hyperlink to web page
+bdodisplay text normal or reversed
+blockquote : define section which qouted from another soure
+hr create a line 
+br break line
+
+
+======================================================
+// list type //
+
+ol : thẻ đánh số tụ động
+ul : danh dau dau dong bang cac ki tu dac biet, disc(tron)_default, circle, square
+dl : tao danh sach dinh nghia, bao quanh
+    dt : chi dinh thuat ngu can dinh nghia
+    dd : cung cap dinh nghia
+
+
+======================================================
+// add link 
