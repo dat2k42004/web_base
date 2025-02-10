@@ -1,3 +1,4 @@
+=====================================================
 // text basic //
 
 h1 head one : create title for web page, main content
@@ -33,3 +34,13 @@ dl : tao danh sach dinh nghia, bao quanh
 
 ======================================================
 // add link 
+
+target : chi dinh noi link opened 
+    _self : open in default frame or tab
+    _blank : open in new tab
+    _parent : open in parent frame of current frame
+    _top : open in all window browser, delete all frame
+
+download : to down link
+mailto:"email" : to email to
+tel:"phone number : to phone to 
