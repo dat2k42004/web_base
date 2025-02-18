@@ -1,27 +1,40 @@
 html {
-    font-size : 22px
+  font-size: 22px;
 }
 body {
-    background-color: #333;
-    color : whitesmoke;
+  background-color: #0c0c0c;
+  color: whitesmoke;
 }
 .dash_list {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 .dash_list li::before {
-    content: "-";
-    margin-right: 8px;
+  content: "-";
+  margin-right: 8px;
 }
 
 a {
-    color : aliceblue;
+  color: aliceblue;
 }
 
 a:visited {
-    color : lightgray;
+  color: lightgray;
 }
 
-a:hover, a:active {
-    color : #eee;
+a:hover,
+a:active {
+  color: #eee;
 }
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+

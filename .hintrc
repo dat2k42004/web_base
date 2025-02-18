@@ -8,7 +8,8 @@
     "axe/structure": [
       "default",
       {
-        "list": "off"
+        "list": "off",
+        "definition-list": "off"
       }
     ],
     "axe/text-alternatives": [
@@ -21,6 +22,12 @@
       "default",
       {
         "link-name": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
       }
     ]
   }

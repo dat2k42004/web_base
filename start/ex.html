@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="DAT_PTIT" />
-    <meta
-      name="description"
-      content="This page contains all the things 
-        I am learing how to create as I learn HTML"
-    />
-    <title>My first Web</title>
-    <link rel="icon" href="dat.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
 
-  <body>
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="DAT_PTIT" />
+  <meta name="description" content="This page contains all the things 
+        I am learing how to create as I learn HTML" />
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <title>My first Web</title>
+  <link rel="icon" href="dat.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <header>
     <h1>This is my information</h1>
-    <nav>
+
+    <nav aria-label="primary-navigation">
       <ul>
         <li>
           <a href="#dat">info</a>
@@ -25,48 +29,57 @@
         <li>
           <a href="#ptit">school</a>
         </li>
+        <li>
+          <a href="#time">schedule</a>
+        </li>
+        <li>
+          <a href="#contact">contact me</a>
+        </li>
       </ul>
     </nav>
-    <hr>
-    <section id="dat">
-    <h2>Hello, I am Dat</h2>
-      <p>I come from Hai Duong, and now I live in Ha Noi.<br>I am studing in PTIT, and my myjor is Information Technology!</p>
-      <p>Trái ngược với những gì các video hướng dẫn trên mạng<br>
-         sẽ khiến bạn tin tưởng vào việc khôi phục dữ liệu SSD<br>
-          thực sự có thể thực hiện được. Nhưng tỷ lệ thành công<br>
-           phụ thuộc vào việc bạn có bật lệnh TRIM hay không.<br>
+  </header>
 
-        Khi được bật, lệnh SSD TRIM cho phép hệ điều hành của bạn<br>
-         thông báo cho SSD rằng, dữ liệu không sử dụng có thể bị xóa nội bộ.<br>
-          Điều này được thực hiện để tăng tốc các thao tác ghi chép tiếp theo<br>
-           và do đó tăng hiệu suất tổng thể của SSD.<br>
-        
-        Bởi vì việc gửi lệnh TRIM là tùy thuộc vào hệ điều hành,<br>
-         việc mất dữ liệu thường không xảy ra sau khi mất điện,<br>
-          lỗi phần mềm, hỏng hệ thống tệp, mất phân vùng đột ngột và<br>
-           các nguyên nhân phổ biến khác gây mất dữ liệu.</p>
-    </section>
-    <hr>
-    <section id="ptit">
-    <h2>This is PTIT</h2>
-      <p>Location in Ha Dong, Ha Noi. An University of Technology</p><br>
+  <hr>
+
+  <main>
+    <article id="dat">
+      <h2>Hello, I am Dat</h2>
+      <p>I come from Hai Duong, and now I live in Ha Noi.<br>I am studing in PTIT, and my myjor is Information
+        Technology!</p>
       <p>Trái ngược với những gì các video hướng dẫn trên mạng<br>
         sẽ khiến bạn tin tưởng vào việc khôi phục dữ liệu SSD<br>
-         thực sự có thể thực hiện được. Nhưng tỷ lệ thành công<br>
-          phụ thuộc vào việc bạn có bật lệnh TRIM hay không.<br>
+        thực sự có thể thực hiện được. Nhưng tỷ lệ thành công<br>
+        phụ thuộc vào việc bạn có bật lệnh TRIM hay không.<br>
 
-       Khi được bật, lệnh SSD TRIM cho phép hệ điều hành của bạn<br>
+        Khi được bật, lệnh SSD TRIM cho phép hệ điều hành của bạn<br>
         thông báo cho SSD rằng, dữ liệu không sử dụng có thể bị xóa nội bộ.<br>
-         Điều này được thực hiện để tăng tốc các thao tác ghi chép tiếp theo<br>
-          và do đó tăng hiệu suất tổng thể của SSD.<br>
-       
-       Bởi vì việc gửi lệnh TRIM là tùy thuộc vào hệ điều hành,<br>
-        việc mất dữ liệu thường không xảy ra sau khi mất điện,<br>
-         lỗi phần mềm, hỏng hệ thống tệp, mất phân vùng đột ngột và<br>
-          các nguyên nhân phổ biến khác gây mất dữ liệu.</p>
-    </section>
-    <hr>
+        Điều này được thực hiện để tăng tốc các thao tác ghi chép tiếp theo<br>
+        và do đó tăng hiệu suất tổng thể của SSD.<br>
 
+        Bởi vì việc gửi lệnh TRIM là tùy thuộc vào hệ điều hành,<br>
+        việc mất dữ liệu thường không xảy ra sau khi mất điện,<br>
+        lỗi phần mềm, hỏng hệ thống tệp, mất phân vùng đột ngột và<br>
+        các nguyên nhân phổ biến khác gây mất dữ liệu.</p>
+    </article>
+    <hr>
+    <article id="ptit">
+      <h2>This is PTIT</h2>
+      <p>Location in Ha Dong, Ha Noi. An University of Technology</p>
+      <p>Trái ngược với những gì các video hướng dẫn trên mạng<br>
+        sẽ khiến bạn tin tưởng vào việc khôi phục dữ liệu SSD<br>
+        thực sự có thể thực hiện được. Nhưng tỷ lệ thành công<br>
+        phụ thuộc vào việc bạn có bật lệnh TRIM hay không.<br>
+
+        Khi được bật, lệnh SSD TRIM cho phép hệ điều hành của bạn<br>
+        thông báo cho SSD rằng, dữ liệu không sử dụng có thể bị xóa nội bộ.<br>
+        Điều này được thực hiện để tăng tốc các thao tác ghi chép tiếp theo<br>
+        và do đó tăng hiệu suất tổng thể của SSD.<br>
+
+        Bởi vì việc gửi lệnh TRIM là tùy thuộc vào hệ điều hành,<br>
+        việc mất dữ liệu thường không xảy ra sau khi mất điện,<br>
+        lỗi phần mềm, hỏng hệ thống tệp, mất phân vùng đột ngột và<br>
+        các nguyên nhân phổ biến khác gây mất dữ liệu.</p>
+    </article>
     <ul>
       <li>
         Download an <a href="dat.png" download>Info img</a><br>
@@ -78,11 +91,143 @@
         open <a href="https://www.google.com/" target="_blank" rel="noopener">google</a> to search. <br>
       </li>
     </ul>
+  </main>
 
+  <hr>
+  <footer>
     <p>
-      <a href="/start/">Back to home</a>
+      <a href="#">Back to home</a>
     </p>
-    
-    <hr>
+  </footer>
+
+  <br>
+  <p id="time">Timeline of a night</p>
+  <table>
+    <caption>my daily schedule</caption>
+    <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th scope="col">Time</td>
+        <th scope="col">Activity</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">No.1</th>
+        <td>
+          <time datetime="19:00">7pm</time>-<time datetime="20:00">8pm</time>
+        </td>
+        <td>Have a dinner</td>
+      </tr>
+      <tr>
+        <th scpoe="row">No.2</th>
+        <td>
+          <time datetime="20:00">8pm</time>-<time datetime="00:00">0am</time>
+        </td>
+        <td>Learn free code courses</td>
+      </tr>
+      <tr>
+        <th scope="row">no.3</th>
+        <td>
+          <time datetime="00:00">0am</time>-<time datetime="06:00">6am</time>
+        </td>
+        <td>Deep Sleepy</td>
+      </tr>
+      <tr>
+        <th rowspan="2" scope="row">No.4</th>
+        <td rowspan="2">All other times</td>
+        <td>free time</td>
+      </tr>
+      <tr>
+        <td>play</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">end day</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <article id="contact">
+    <h2>Contact me</h2>
+    <p>i'd really seen you again!</p>
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="firstname">First name: </label>
+        <input type="text" name="firstname" id="firstname" placeholder="Nguyen" autocomplete="on" required autofocus>
+      </p>
+      <p>
+        <label for="lastname">Last name: </label>
+        <input type="text" name="lastname" id="lastname" placeholder="Dat" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" placeholder="secret" required>
+      </p>
+      <input type="submit" value="submit">
+    </form>
+  </article>
+
+  <form>
+    <input type="email" id="email" name="email" required><br />
+    <input type="submit" value="submit"><br />
+    <input type="file" name="newfile"><br />
+    <input type="image" alt="submit" src="dat.png" width="100px">
+  </form>
+  <article id="contact">
+    <label for="num">Enter your age: </label>
+    <input type="number" name="num" min="'18" max="60" value="18" step="2" required>
+    <input type="submit" value="submit">
+    <form action="https://httpbin.org/get" method="get"></form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label for="coffee">Favourite coffee: </label>
+          <select name="coffee" id="coffee">
+            <optgroup label="classical">
+              <option value="capuchino">Capuchino</option>
+              <option value="americano" selected>Americano</option>
+            </optgroup>
+            <optgroup label="improved">
+              <option value="milk_coffee">Milk Coffee</option>
+              <option value="other">Other</option>
+            </optgroup>
+          </select>
+          <input type="text" name="coffee" id="coffee" list="coffee_list">
+          <datalist id="coffee_list">
+            <option value="coffee"></option>
+            <option value="latte"></option>
+            <option value="espresso"></option>
+            <option value="americano"></option>
+          </datalist>
+        </p>
+        <input type="submit" value="submit">
+      </fieldset>
+      <fieldset>
+        <legend>Favourite sport</legend>
+        <p>
+          <label for="football">Football</label>
+          <input type="radio" id="football" value="football">
+        </p>
+        <p>
+          <label for="basketball">Basketball</label>
+          <input type="radio" id="basketball" value="basketball">
+        </p>
+        <p>
+          <label for="running">Running</label>
+          <input type="radio" id="running" value="running">
+        </p>
+        <p>
+          <input type="submit" value="submit">
+          
+        </p>
+      </fieldset>
+      <button type="submit" formaction="https://httpbin.org/get" formmethod="post">post</button>
+      
+    </form>
+  </article>
+  <a href="#">back</a>
   </body>
-</html>
+
+  </html>
