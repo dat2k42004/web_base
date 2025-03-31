@@ -1,0 +1,26 @@
+{
+  "name": "first_app",
+  "version": "1.0.0",
+  "description": "learn backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dat2k42004/web_base.git"
+  },
+  "keywords": [
+    "node js"
+  ],
+  "author": "dat2k4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dat2k42004/web_base/issues"
+  },
+  "homepage": "https://github.com/dat2k42004/web_base#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
