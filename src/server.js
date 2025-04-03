@@ -1,32 +1,33 @@
 const { render } = require('ejs')
 const express = require('express') // commonjs
-
-const path = require('path')
+const configViewEngine = require('./config/viewEngine');
 require('dotenv').config()
-// import express from 'express'; // es modules
+const webRoutes = require('./routes/web');
+const connection = require('./config/database');
+
 const app = express() // app express
 const port = process.env.PORT || 8081// port
 const hostname = process.env.HOSTNAME
 
 
 //config template engine
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
+configViewEngine(app);
+
+
 //khai bao route
-
-app.get('/', (req, res) => {
-    res.send('Hello World!\n I am Dat!')
-})
-
-app.get('/dat2k4', (req, res) => {
-    // res.send('Hello World!\n check abc')
-    res.render('sample.ejs')
-})
+app.use('/', webRoutes); 
 
 
-app.get('/test', (req, res) => {
-    res.send('<h1>Post and Telecomunication Institute of Technology</h1>')
-})
+//test connection
+
+
+connection.query (
+    'select * from Users',
+    function(err, results, fields) {
+        console.log("results: ", results);
+        // console.log("fields: ", fields);
+    }
+)
 
 app.listen(port, hostname, () => {
     console.log(`Example app listening on port ${port}`)
