@@ -1,0 +1,141 @@
+.user-photos-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f6f7fb;
+  padding: 32px 0;
+}
+
+.user-photos-card {
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 16px 0;
+}
+
+.user-photos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.user-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.add-photo-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.add-photo-btn:hover {
+  background: #1565c0;
+}
+
+.photo-block {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.photo-img-block {
+  text-align: center;
+}
+
+.photo-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.photo-date {
+  color: #888;
+  font-size: 13px;
+}
+
+.photo-comments-block {
+  margin: 12px 0;
+}
+
+.comments-title {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.comment-card {
+  margin-bottom: 8px;
+  background: #f9f9f9;
+}
+
+.no-comment {
+  color: #888;
+  font-style: italic;
+}
+
+.comment-form-block {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input {
+  width: 70%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.comment-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.comment-btn:hover {
+  background: #1565c0;
+}
+
+.add-photo-form-block {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.photo-input {
+  margin-bottom: 12px;
+}
+.photo-block {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+.photo-img-block {
+  text-align: center;
+}
+
+.photo-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}

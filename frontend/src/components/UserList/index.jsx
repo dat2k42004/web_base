@@ -8,13 +8,19 @@ import {
 import { useState } from "react";
 import "./styles.css";
 import { userListModel } from "../../modelData/model";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 /**
  * Define UserList, a React component of Project 4.
  */
-function UserList() {
+function UserList({user}) {
   // const users = models.userListModel();
   const [users, setUsers] = useState();
+  const navigate = useNavigate();
+  useEffect(() => {
+      if (!user) {
+        navigate('/login');
+      }
+    }, [user, navigate]);
   useEffect(() => {
     const getData = async () => {
       try {
@@ -28,7 +34,7 @@ function UserList() {
     getData();
   }, []);
   return (
-    <div style={{width: "300px"}}>
+    <div >
       {/* <Typography variant="body1">
           This is the user list, which takes up 3/12 of the window. You might
           choose to use <a href="https://mui.com/components/lists/">Lists</a>{" "}
@@ -39,7 +45,7 @@ function UserList() {
         {users && users.map((user) => (
           <React.Fragment key={user._id}>
             <ListItem button component={Link} to={`/users/${user._id}`}>
-              <ListItemText primary={user.last_name} />
+              <ListItemText primary={user.first_name + " " + user.last_name} />
             </ListItem>
             <Divider />
           </React.Fragment>
